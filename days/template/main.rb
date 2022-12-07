@@ -1,1 +1,1 @@
-string = File.read(File.expand_path("#{__dir__}/test.txt"))
+# string = File.read(File.expand_path("#{__dir__}/test.txt"))
