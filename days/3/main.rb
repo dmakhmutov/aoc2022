@@ -16,9 +16,9 @@ answer1 = items.sum { |item| SCORE_MAPPER.index(item) + 1 }
 
 ### Part 2
 
-items = string.split("\n").each_slice(3).map do |first, second, third|
-  first, second, third = [first, second, third].map { |line| line.chars }
-  first.intersection(second).intersection(third)
+items = string.split("\n").each_slice(3).map do |three_line|
+  first, second, third = three_line.map { |line| line.chars }
+  first.intersection(second, third)
 end.flatten
 
 answer2 = items.sum { |item| SCORE_MAPPER.index(item) + 1 }
